@@ -1,0 +1,22 @@
+# Build artifacts
+build/
+*.o
+*.d
+*.so
+*.a
+*.out
+*.exe
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+# IDE files (example for VS Code, adjust as needed)
+.vscode/
+# Operating System generated files
+.DS_Store
+Thumbs.db
+# Editor swap files
+*~
+*.swp
