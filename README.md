@@ -5,9 +5,10 @@ A lightweight and efficient console-based music player for Linux, supporting MP3
 ## Features
 
 * Play MP3, Ogg Vorbis, and AAC audio files.
-* Load and manage .m3u playlists.
-* Basic playback controls (play, pause, stop, next, previous, volume).
-* Display current song information.
+* Load, save, shuffle, and repeat .m3u playlists.
+* Full playback controls (play, pause, stop, next, previous, volume).
+* Display current song information (title, artist, album, duration).
+* Command-line interface with help documentation.
 
 ## Building from Source
 
@@ -55,24 +56,25 @@ After building, you can run the player from the `build` directory:
 ./console-music-player [options] [path/to/music_file_or_playlist.m3u]
 ```
 
-### Command-line Options (Examples - To be implemented)
+### In-Player Commands
 
-  * `-p <path>` or `--play <path>`: Start playing a specific file or playlist.
-  * `-v <volume>` or `--volume <volume>`: Set initial volume (0-100).
-  * `-l <path>` or `--load <path>`: Load a playlist without starting playback.
+Once the player is running, you can use the following commands:
 
-### In-Player Commands (Examples - To be implemented)
-
-Once the player is running, you can use single-character commands:
-
-  * `p` or `space`: Play/Pause
-  * `s`: Stop
-  * `n`: Next track
-  * `b`: Previous track
-  * `+`: Increase volume
-  * `-`: Decrease volume
-  * `q` or `Ctrl+C`: Quit
-  * `h` or `?`: Show help
+  * `load <filename>`: Load a playlist from a file.
+  * `save <filename>`: Save the current playlist to a file.
+  * `play`: Start playing the current song.
+  * `pause`: Pause the current song.
+  * `stop`: Stop the current song.
+  * `next`: Play the next song in the playlist.
+  * `previous`: Play the previous song in the playlist.
+  * `volume <0-100>`: Set the playback volume (0-100%).
+  * `getvolume`: Get the current playback volume.
+  * `shuffle`: Shuffle the current playlist.
+  * `repeat [on|off]`: Enable or disable playlist repeat.
+  * `list`: List songs in the current playlist.
+  * `info`: Display information about the current song.
+  * `help`: Show available commands.
+  * `q` or `quit`: Exit the player.
 
 ## Project Structure
 

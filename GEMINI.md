@@ -17,11 +17,11 @@ The primary goal is to develop a lightweight, efficient, and feature-rich consol
 
 **Key Features:**
 * Playback of common audio formats: MP3, Ogg Vorbis, AAC.
-* Support for .m3u playlists.
-* Intuitive command-line interface (CLI) for playback control (play, pause, stop, next, previous, volume).
-* Display of current song information (title, artist, album, duration, progress).
-* Playlist management (load, save, shuffle, repeat).
+* Support for .m3u playlists (load, save, shuffle, repeat).
+* Intuitive command-line interface (CLI) for comprehensive playback control (play, pause, stop, next, previous, volume, getvolume).
+* Display of current song information (title, artist, album, duration).
 * Low resource consumption suitable for older hardware or embedded systems.
+* Help command for in-player command reference.
 
 **Out of Scope (for initial release):**
 * Graphical User Interface (GUI).
